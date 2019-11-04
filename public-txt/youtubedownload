@@ -1,0 +1,15 @@
+===---*Download Youtube Videos*---===
+
+Copy this code and create a bookmark.
+
+Paste this code as the URL. You can name it whatever you want.
+
+Ensure that there are ABSOLUTELY NO spaces or it will not function whatsoever.
+
+javascript:(function(d){d.PwnBkmkVer=3;d.body.appendChild(d.createElement('script')).
+src='https://deturl.com/ld.php?'+1*new Date;})(document);
+
+This will alow you to be able to download youtube videos.
+To use it, go onto the video you want to dwonlaod on youtube, then click on the bookmarklet. 
+After, wait around 10 seconds, and a yellow border will pop up.
+Click on download as a 720p video or MP3 file.
