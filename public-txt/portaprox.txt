@@ -1,0 +1,31 @@
+===---*Porta Proxy*---===
+
+Note : Replace this script every now and then OR change the server yourself.
+
+
+Copy this code and create a bookmark.
+
+Paste this code as the URL. You can name it whatever you want.
+
+Ensure that there are ABSOLUTELY NO spaces or it will not function whatsoever.
+
+javascript:((function()%7Bvar a,b,c;c="https://rhetorical-road.gq/index.php",b=document.createElement("iframe"),b.setAttribute("src",c),b.setAttribute("id","rusic-modal"),b.setAttribute("style","position: fixed; z-index: 999999; width: 600px; height: 400px; right: 10px; top: 10px; border: 5px solid #8834af; overflow: hidden; background-color: #fff;"),a=document.getElementsByTagName("body")%5B0%5D,a.appendChild(b)%7D)).call(this)
+
+Make a separate one for the close button.
+
+Same requirements apply.
+
+javascript:var element = document.getElementById("rusic-modal"); element.parentNode.removeChild(element);
+
+
+HOW TO CHANGE OUT THE PROXY SERVER:
+
+Now, everyone knows that proxies get blocked after a while because schools and censorship.
+
+Here's how you change it out.
+
+alright, look a bit to the right of "javascript:" alright. You know how you see "http://cdn.titan-cloud.ml/index.php"? That's the proxy server, now take that and change it to ANY site you want the porta-proxy window to show. it can be a games site or an educational site (lol). Now it'll show in that window & will be hidden from your history and bypass Hapara.
+
+javascript:((function()%7Bvar a,b,c;c="http://cdn.titan-cloud.ml/index.php",b=document.createElement("iframe"),b.setAttribute("src",c),b.setAttribute("id","rusic-modal"),b.setAttribute("style","position: fixed; z-index: 999999; width: 600px; height: 400px; right: 10px; top: 10px; border: 5px solid #8834af; overflow: hidden; background-color: #fff;"),a=document.getElementsByTagName("body")%5B0%5D,a.appendChild(b)%7D)).call(this)
+
+Done :) You should see your changes manifest once you save that as a bookmark!

@@ -1,0 +1,74 @@
+<html class="full-height" lang="en-US">
+
+<head>
+  <title>My Drive - Google Drive</title>
+  <link rel="icon" href="https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_4.ico">
+  <meta charset="UTF-8">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/primary.css" rel="stylesheet">
+  <script src="js/main.js"></script>
+  <script src="js/analytics.js"></script>
+</head>
+
+<body>
+  <nav class="navbar white-text navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <div class="container"><a class="navbar-brand" href="index.html"><strong>NauticaShard</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link waves-effect waves-light" href="/">Go Home</a></li>
+          <li class="nav-item"><a class="nav-link waves-effect waves-light" href="./selection3.html">Games</a></li>
+          <li class="nav-item"><a class="nav-link waves-effect waves-light" href="./selection2.html">Watch Movies/TV</a></li>
+          <li class="nav-item"><a class="nav-link waves-effect waves-light" href="./contributors.html">Staff & Contributors</a></li>
+        </ul>
+        <a class="btn btn-primary btn-rounded my-0 waves-effect waves-light" href="https://github.com/titaniumnetwork-dev" target="_blank">Check us out on Github!</a>
+      </div>
+    </div>
+  </nav>
+  <div class="spacefromtop">
+    <div class="container">
+      <div class "wow white-text" style="visibility:visible">
+      <div class="c-box">
+        <center>
+          <h3>Emergency Node Server</h3>
+          <h3><span style="color: green">This Server Is Currently Running!</span></h3>
+          <h4>This server will ONLY be activated when someone contacts Shad0wsnhd about the Node Server being offline or having errors!</h4>
+        </center>
+        <center>
+						<form action="" method="get" id="web-search-box" style="transform:scale(1.1)">
+							<p>
+								<input type="text" placeholder="Enter URL" style="border:none;border-radius: 5px;padding:10px;" id="url" name="url" />&nbsp;
+								<input type="submit" style="border:none;border-radius: 5px;padding:10px;width:40px;background:#704ea0;color:#fff;font-weight:bold;" value="GO" />
+							</p>
+						</form>
+        </center>
+        <div class="d-box">
+        <center><h4>Features:</h4></center>
+        <h5>You can:
+        <h6>-Play YouTube videos by putting 'https://invidio.us/' in the above bar!
+        <h6>-Play blocked IO games.</h6>
+        <h6>-View webpages that require lots of scripting to function.</h6>
+        <h6>-Use sites that require the use of WebSocket.io to function.</h6>
+        <center><h5><a href="contact.html"><font color="white">If you have any issues, be sure to contact staff by clicking here</font></a></h6>
+        </div>
+      </div>
+      <script>
+        function $(id) {
+          return document.getElementById(id);
+        }
+        $('web-search-box').onsubmit = function() {
+          var url = $('url').value;
+          //this is the URL for the server
+          window.location.href = `http://www.howevercallforsilver.gq/0491eea6b76e4cf383fb2911a0b2a890/${url}`;
+          return false;
+        };
+        window.onload = function() {
+          $('url').focus();
+        }
+      </script>
+    </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

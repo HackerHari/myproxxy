@@ -1,0 +1,11 @@
+===---*Inspect Element Clone*---===
+
+Copy this code and create a bookmark.
+
+Paste this code as the URL. You can name it whatever you want.
+
+Ensure that there are ABSOLUTELY NO spaces or it will not function whatsoever.
+
+javascript:(function() {var script=document.createElement('script');script.src='https://goggles.mozilla.org'+'/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://goggles.mozilla.org');document.body.appendChild(script);}())
+
+If this doesn't work, notify us.
