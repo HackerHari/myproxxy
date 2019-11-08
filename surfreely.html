@@ -1,0 +1,102 @@
+<html class="full-height" lang="en-US">
+
+<head>
+  <title>Hari Balaji</title>
+  <link rel="icon" href="./img/iimmgg.png">
+  <meta charset="UTF-8">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/primary.css" rel="stylesheet">
+  <script src="js/main.js"></script>
+  <script src="js/analytics.js"></script>
+</head>
+
+<body>
+  <nav class="navbar white-text navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <div class="container"><a class="navbar-brand" href="index.html"><strong>Hari Balaji</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link waves-effect waves-light" href="/">Go Home</a></li>
+          <li class="nav-item"><a class="nav-link waves-effect waves-light" href="../selection3.html">Games</a></li>
+          <li class="nav-item"><a class="nav-link waves-effect waves-light" href="../selection2.html">Watch Movies/TV</a></li>
+          <li class="nav-item"><a class="nav-link waves-effect waves-light" href="../contributors.html">Me</a></li>
+        </ul>
+        <a class="btn btn-primary btn-rounded my-0 waves-effect waves-light" href="https://github.com/wedrtyu" target="_blank">Check us out on Github!</a>
+      </div>
+    </div>
+  </nav>
+  <div class="spacefromtop">
+    <div class="container">
+      <div class "wow white-text" style="visibility:visible">
+        <div class="c-box">
+          <center>
+            <img src="https://cdn.glitch.com/8771f27e-b88e-49f0-84b0-728655e59a31%2Fm.png?v=1565288565257" width="50">
+            <h3>External Muun Server</h3>
+          </center>
+          <center>
+            <form action="" method="get" id="web-search-box" style="transform:scale(1.1)">
+              <p>
+                <input type="text" placeholder="Enter URL" style="border: 1px solid #2DB194;border-radius: 5px;padding:10px;color:#fff;background:#171717;" id="url" name="url" />&nbsp;
+                <input type="submit" style="border:none;border-radius: 5px;padding:14px;width:50px;background:#2DB194;color:#fff;font-weight:bold;" value="GO" />
+              </p>
+            </form>
+          </center>
+          <center>Titanium Network has partnered with <a href="https://muun.cf">Muun</a> to create this proxy.
+            <p>Muun is a highly optimized fork of Node Unblocker that allows you to play games at school without those pesky block screens or any performance drops!</p>
+          </center>
+          <div class="d-box">          <!--<div class="d-box"></div>-->
+
+            <center>
+              <h4>Features:</h4>
+            </center>
+            <h5>You can:
+              <h6>-Play blocked IO games with little performance penalty.</h6>
+              <h6>-View webpages that require lots of scripts to function.</h6>
+              <h6>-Successfully sign into *some* sites.</h6>
+              <h6>-Use sites that require the use of WebSocket.io to function.</h6>
+              <center>
+                <h5><a href="contact.html">
+                    <font color="white">If you have any issues, be sure to contact staff by clicking here</font>
+                  </a></h6>
+          </div>
+        </div>
+        <script>
+          let key;
+          let current;
+          async function fetchDetails() {
+            key = await fetch('https://muun.cf/apikey')
+               .then((res) => res.json());
+            current = await fetch('https://muun.cf/currenturl')
+              .then((res) => res.json());
+          }
+          fetchDetails();
+          
+          function $(id) {
+            return document.getElementById(id);
+          }
+          $('web-search-box').onsubmit = function() {
+            var url = $('url').value;
+                <!--background-image: "https://cdn1.imggmi.com/uploads/2019/11/8/0c7a4e2b91bf2221b3fb0ad9ac1520e8-full.jpg";
+        background-repeat:no-repeat;
+       background-size:cover;-->
+            //this is the URL for the server
+            //mun.suncolor.live/get?url=
+            //window.location.href = `https://${current.url}/?key=${key.key}&ref=${url}&from=TitaniumNetwork`;
+            window.location.href = `https://mun.suncolor.live/get?url=${url}`;
+            return false;  
+          };
+          window.onload = function() {
+            $('url').focus();
+          }
+           
+        </script>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script>
+  new WOW().init();
+</script>
+
+</html>
